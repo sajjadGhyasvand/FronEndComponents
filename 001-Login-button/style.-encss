@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Vazir';
+    src: url('/Vazir/Vazir-Regular-FD.eot') format('embedded-opentype'), 
+        url('/Vazir/Vazir-Regular-FD.ttf') format('truetype'), 
+        url('/Vazir/Vazir-Regular-FD.woff') format('woff'), 
+        url('/Vazir/Vazir-Regular-FD.woff2') format('woff2');
+}
+/*  ======================================================================== */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   display: relative;
+   position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.btn-arrow{
+    /* to center button */
+    
+    /* Custom BTN */
+    border: none;
+    outline: none;
+    background-color: transparent;
+    
+    padding-right: 2rem;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: 0.5s ;
+
+}
+.btn-arrow::after{
+    top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+    border-right: 4px solid #FFAB9D;
+}
+
+.btn-arrow__title{
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: Vazir;
+    color: #03045e;
+    margin-left: 1rem;
+    transition: 0.6s ;
+
+}
+.btn-arrow::before{
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background: #FFD5CE;
+    border-radius: 2rem;
+    z-index: -1;
+    transition: 0.4s ;
+}
+.btn-arrow:hover{
+    border-radius: 2rem;
+}
+
+.btn-arrow:hover::before{
+    background:#FFAB9D;   
+width: 100%;
+}
+.btn-arrow__icon{
+    width: 16px;
+    height: 2px;
+    left: 12px;
+    transition: 0.4s;
+    position: relative;
+}
+.btn-arrow__icon::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #FFAB9D;
+    border-right: 2px solid #FFAB9D;
+    top:-5px;
+    right: 1px;
+    transform: rotate(45deg);
+    transition: 0.4s;
+}
+.btn-arrow:hover .btn-arrow__icon{   
+    background: #FFD5CE;
+    transform: translateX(15px);
+}
+.btn-arrow:hover .btn-arrow__icon::before{
+    border-top:2px solid #FFD5CE;
+    border-right: 2px solid #FFD5CE;
+}
