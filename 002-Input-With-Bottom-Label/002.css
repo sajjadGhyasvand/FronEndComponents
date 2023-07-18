@@ -18,8 +18,7 @@
 body {
   height: 100vh;
 	width: 100%;
-  background: #0f2027; /* fallback for old browsers */
-  background: linear-gradient(to right,#2c5364, #203a43, #0f2027);
+  background: linear-gradient(to right,#0f84b6, #22677eb2, #0f2027);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +42,7 @@ body {
   font-size: 1.2rem;
   margin: 0 auto;
   padding: 1.5rem 2rem;
-  border-radius: 0.2rem;
+  border-radius: 0.6rem;
   background-color: rgb(255, 255, 255);
   border: none;
   width: 90%;
@@ -51,7 +50,10 @@ body {
   border-bottom: 0.3rem solid transparent;
   transition: all 0.3s;
 }
-
+.form__input:focus{
+  outline: none;
+  box-shadow: rgba(226, 207, 207, 0.3) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
 .form__input:placeholder-shown + .form__label {
   opacity: 0;
   visibility: hidden;

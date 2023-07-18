@@ -1,0 +1,133 @@
+body {
+    margin: 0px;
+    background-color: #f8f8f8;
+  }
+  
+  h1 {
+    font-family: Segoe UI;
+    text-align: center;
+    line-height: 42px;
+    padding-bottom: 23px;
+    margin: 10px 0px;
+    border-bottom: 1px solid #dadada;
+  }
+  
+  #at-symbol {
+    color: #484848;
+    font-size: 42px;
+    position: relative;
+    top: 4px;
+    
+  }
+  
+  #page-name {
+    animation-name: page-name;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes page-name {
+    0%{
+        color: #27221a;
+    }
+    50%{
+        color: #27221a2f;
+    }
+    70%{
+        color: #27221a2f;
+    }
+    100%{
+        color: #27221a;
+    }
+  }
+  section {
+    width: 250px;
+    margin: 100px auto;
+    padding: 60px;
+    background-color: #fff;
+    box-shadow: 0px 5px 35px #d7d7d7;
+    border-radius: 35px;
+  }
+  
+  .toggle-btn {
+    position: relative;
+    width: 145px;
+    height: 74px;
+    margin: 0 auto;
+    border-radius: 40px;
+  }
+  
+  input[type="checkbox"] {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: 0px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+  }
+  
+  /* First toggle btn */
+  
+  #_1st-toggle-btn span {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    overflow: hidden;
+    opacity: 1;
+    background-color: #fff;
+    box-shadow: 0px 2px 25px #d9d9d9;
+    border-radius: 40px;
+    transition: 0.2s ease background-color, 0.2s ease opacity;
+  }
+  
+  #_1st-toggle-btn span:before,
+  #_1st-toggle-btn span:after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    transition: 0.5s ease transform, 0.2s ease background-color;
+  }
+  
+  #_1st-toggle-btn span:before {
+    background-color: #fff;
+    transform: translate(-58px, 0px);
+    z-index: 1;
+  }
+  
+  #_1st-toggle-btn span:after {
+    background-color: #000;
+    transform: translate(8px, 0px);
+    z-index: 0;
+  }
+  
+  #_1st-toggle-btn input[type="checkbox"]:checked + span {
+    background-color: #000;
+  }
+  
+  #_1st-toggle-btn input[type="checkbox"]:active + span {
+    opacity: 0.5;
+  }
+  
+  #_1st-toggle-btn input[type="checkbox"]:checked + span:before {
+    background-color: #000;
+    transform: translate(56px, -19px);
+  }
+  
+  #_1st-toggle-btn input[type="checkbox"]:checked + span:after {
+    background-color: #fff;
+    transform: translate(79px, 0px);
+  }
+  
+  /* First toggle btn completed */
+  
+  
