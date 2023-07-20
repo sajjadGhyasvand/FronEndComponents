@@ -45,6 +45,8 @@ body {
 .search-btn {
 	width: 3em;
 	height: 3em;
+	border-radius: 0%;
+
 }
 .search-bar input:invalid:not(:focus),
 .search-btn {
