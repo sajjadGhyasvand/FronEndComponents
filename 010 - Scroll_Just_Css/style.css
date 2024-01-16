@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Vazir';
+    src: url('Vazir/Vazir-Regular-FD.eot') format('embedded-opentype'),
+        url('Vazir/Vazir-Regular-FD.ttf') format('truetype'),
+        url('Vazir/Vazir-Regular-FD.woff') format('woff'),
+        url('Vazir/Vazir-Regular-FD.woff2') format('woff2');
+}
+
+h1,
+p,
+span {
+    font-family: "Vazir";
+    font-size: 15px;
+}
+h1{
+    
+    margin: 5rem 0rem;
+    text-align: center;
+}
+body {
+    line-height: 1.5;
+    font-size: clamp(1.125rem,2vw,1.25rem);
+    font-family: "Vazir";
+    background-color: aliceblue;
+    text-align: justify;
+    margin: 100px 150px;
+    color: black;
+    display: block;
+}
+
+
+
+
+
+ p,li{
+    animation: fade 3s linear;
+    animation-timeline: view();
+} 
+
+@keyframes fade {
+     from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    } 
+}
+
+
+
+
+
+
+
+
+
+h2{
+    background: linear-gradient(90deg,black,transparent);
+    background-size:200% ;
+    animation: reveal both linear;
+    animation-timeline: view();
+    background-repeat: no-repeat ;
+    animation-range: entry 50% cover 50%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+@keyframes reveal{
+  from{
+    background-position-x: 200% ;
+  }  
+  to{
+    background-position-x: 0% ;
+  }
+}
