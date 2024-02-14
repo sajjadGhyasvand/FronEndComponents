@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: darkslategrey;
+}
+
+.heart{
+    background-color:red;
+    width:2rem;
+    height: 2rem;
+    position: relative;
+     transform: rotate(45deg); 
+     border-radius: 6px; 
+}
+ .heart::before,.heart::after{
+    content:"";
+    position: absolute;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    border-radius:50% ; 
+}
+ .heart::before{
+    left: -40%;
+}
+.heart::after{
+    top: -40%;
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
