@@ -1,0 +1,22 @@
+.plate_input{
+    background-color: gainsboro;
+    border: 1px solid gray;
+    border-radius: 6px;
+    text-align: center; 
+}
+.plate_input_end{
+    border-bottom-right-radius:0 ;
+    border-top-right-radius:0 ;
+}
+.plate_iran{
+    background-color: gainsboro;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: 30px;
+    padding: 3px 6px;
+    border: 1px solid gray;
+    border-left: 0;
+    border-radius: 6px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
