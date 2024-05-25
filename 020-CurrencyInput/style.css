@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Vazir';
+    src: url('../Fonts/Vazir.eot') format('embedded-opentype'), url('../Fonts/Vazir.ttf') format('truetype'), url('../Fonts/Vazir.woff') format('woff'), url('../Fonts/Vazir.woff2') format('woff2');
+}
+body {
+    font-family: 'Vazir', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#currency-input {
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
