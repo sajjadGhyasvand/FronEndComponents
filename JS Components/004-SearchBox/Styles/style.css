@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Vazir';
+    src: url('../Fonts/Vazir.eot') format('embedded-opentype'), url('../Fonts/Vazir.ttf') format('truetype'), url('../Fonts/Vazir.woff') format('woff'), url('../Fonts/Vazir.woff2') format('woff2');
+}
+
+body {
+    font-family: 'vazir';
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(90deg, #c50707,#faa000);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+.search{
+    height: 50px;
+    position: relative;
+}
+
+.search.active .input{
+    width: 300px;
+}
+.search.active .btn{
+    transform: translateX(-240px);
+    -webkit-transform: translateX(-240px);
+    -moz-transform: translateX(-240px);
+    -ms-transform: translateX(-240px);
+    -o-transform: translateX(-240px);
+}
+.search .input {
+    font-family: 'vazir';
+    font-size: 18px;
+    padding: 5px 10px;
+    height: 40px;
+    width: 20px;
+    border-radius: 10px;
+    border: none;
+    transition: width .4s ease;
+    -webkit-transition: width .4s ease;
+    -moz-transition: width .4s ease;
+    -ms-transition: width .4s ease;
+    -o-transition: width .4s ease;
+}
+
+.search .btn{
+    padding: 15px;
+    border: none;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform .4s ease;
+    -webkit-transition: transform .4s ease;
+    -moz-transition: transform .4s ease;
+    -ms-transition: transform .4s ease;
+    -o-transition: transform .4s ease;
+    font-size: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+
