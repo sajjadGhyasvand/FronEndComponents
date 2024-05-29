@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Vazir';
+    src: url('../Fonts/Vazir.eot') format('embedded-opentype'), url('../Fonts/Vazir.ttf') format('truetype'), url('../Fonts/Vazir.woff') format('woff'), url('../Fonts/Vazir.woff2') format('woff2');
+}
+
+
+body {
+    font-family: 'Vazir', sans-serif !important;
+    min-height: 100vh;
+    background: #fafafa;
+    margin: 2rem;
+}
+
+.img-wrapper{
+        display: inline-block; /* change the default display type to inline-block */
+        overflow: hidden;      /* hide the overflow */
+        
+}
+img{
+    transition: all 0.3s ease-in-out;
+}
+img:hover{
+    transform:scale(1.5);
+    opacity: 0.4;
+    -ms-transform:scale(1.5); /* IE 9 */
+    -moz-transform:scale(1.5); /* Firefox */
+    -webkit-transform:scale(1.5); /* Safari and Chrome */
+    -o-transform:scale(1.5); /* Opera */
+}
+
+.social-link {
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 10px;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+    background: #ddd;
+    text-decoration: none;
+    color: #555;
+}
