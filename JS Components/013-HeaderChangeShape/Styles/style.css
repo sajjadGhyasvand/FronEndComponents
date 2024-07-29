@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Vazir';
+    src: url('../Fonts/Vazir.eot') format('embedded-opentype'), url('../Fonts/Vazir.ttf') format('truetype'), url('../Fonts/Vazir.woff') format('woff'), url('../Fonts/Vazir.woff2') format('woff2');
+}
+
+body {
+    font-family: 'vazir';
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div{
+    position: absolute;
+    background-repeat: no-repeat;
+    top:0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: url('../images/1.jpg');
+    background-size: cover;
+}
+
+div .angel{
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transform: skewY(-10deg);
+    transform-origin: top left;
+}
+
